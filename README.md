@@ -144,12 +144,33 @@ This document outlines the access patterns for the `MainTable` DynamoDB table.
 * **Expected Throughput:**: 1 RCU
 
 # ONGOING WORK
+## CI/CD
 - create CICD using GitHub Actions:
-- on ready to merge: 
-1. build
-2. test
-3. lint
-4. automate change log based on conventional commits
-4. synth -> insert synth out in PR description
-- on merge PR
-1. deploy
+- on **ready to merge**: 
+    -  build
+    - test
+    - lint
+    - automate change log based on conventional commits
+    - synth -> insert synth out in PR description
+- on **merge PR**
+    - deploy
+## Monitoring
+- centralize lambda logs into a single log group
+- create alarms and triggers for abnormally large number of lambda invocations
+- create alarms and triggers for billing budgets and price anomaly detection
+    - teardown
+- add email trigger upon >= 500 errors
+- create individualized lambda latency charts and add to cw dashboard 
+
+## Unit Tests
+- Add missing unit tests in repository package
+- Add end to end unit tests for lambda integrations
+
+## Documentation
+- Add automatic api documentation (swagger?...)
+
+## Refactoring
+- Use context to handle abnormal latency of external API requests
+- Use BatchSendMessage when using SQS SDK when appropriate
+- Change deeper scoped function variables names to be shorter
+- Change interface names to "prefix-er"
