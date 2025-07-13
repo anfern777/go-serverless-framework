@@ -78,8 +78,8 @@ This document outlines the access patterns for the `MainTable` DynamoDB table.
 
 ### 2.1. Access Pattern 1
 
-* **Name:** Get GT Applications Between Dates
-* **Description:** Fetches GT Applications between date A and date B
+* **Name:** Get Applications Between Dates
+* **Description:** Fetches Applications between date A and date B
 * **Frequency:** Medium
 * **Query Type:**
     * `Query`
@@ -168,6 +168,7 @@ This document outlines the access patterns for the `MainTable` DynamoDB table.
 
 ## Documentation
 - Add automatic api documentation (swagger?...)
+- Update Access Patterns to faithfuly mirror the project current state
 
 ## Refactoring
 - Use context to handle abnormal latency of external API requests
