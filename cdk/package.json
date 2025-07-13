@@ -1,0 +1,15 @@
+{
+  "name": "go-serverless-framework-cdk",
+  "version": "1.0.0",
+  "description": "This project consists on 3 modules: - API (api.go-serverless-framework.com) - Frontend (go-serverless-framework.com) - Backoffice (admin.go-serverless-framework.com)",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-cdk": "^2.1020.2"
+  }
+}
