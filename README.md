@@ -170,8 +170,9 @@ This document outlines the access patterns for the `MainTable` DynamoDB table.
 - Add automatic api documentation (swagger?...)
 - Update Access Patterns to faithfuly mirror the project current state
 
-## Refactoring
+## Code
 - Use context to handle abnormal latency of external API requests
 - Use BatchSendMessage when using SQS SDK when appropriate
 - Change deeper scoped function variables names to be shorter
 - Change interface names to "prefix-er"
+- uniformize and standardize "enums"
