@@ -1,11 +1,45 @@
 # go-serverless-framework
 
+## Project Description: 
+This project provides an organizational framework for rapidly deploying AWS Serverless Full-Stack applications. It's designed to streamline the development and deployment of serverless solutions, integrating seamlessly with commonly used AWS services.
+
+### Key Features:
+Example API: Includes a practical example API within the api folder, demonstrating typical lambda integrations and event handlers.
+
+### Comprehensive AWS CDK Integration:
+The cdk folder contains all the necessary code to deploy serverless applications, featuring integrations with services such as:
+
+- CloudFront
+
+- API Gateway
+
+- DynamoDB
+
+- S3
+
+- SQS
+
+- SES
+
+- Cognito
+
+### Multi-Stage Environment Support: 
+Supports various staging environments including Local, Dev, and Production, facilitating a robust development workflow.
+
+### Customization & Flexibility:
+This repository is not intended as an out-of-the-box solution, but rather as a highly customizable foundation. Developers are encouraged to adapt and extend this framework to meet their specific project requirements and architectural needs.
+
+## Important Notice
+**This framework is currently under active development and testing. As such, it may contain undiscovered security vulnerabilities and bugs.**
+
+Your contributions are highly valued! If you identify any vulnerabilities, bugs, or opportunities for optimization, please feel free to create a Pull Request or create a bug report.
+
+## Missing Frontend Assets
+Please note that, althought their cdk IaC is present in the cdk code base, their  folders ("frontend" and "admin") are not included in this repository. You'll need to provide these assets and integrate them according to your specific project requirements.
+
 ## Tech stack
 This project is designed using the following tech stack:
 - node v22-lts
-- Angular v19
-- TailwindCSS
-- Astro framework
 - AWS CDK (language: golang)
 - Go v1.23.1
 
